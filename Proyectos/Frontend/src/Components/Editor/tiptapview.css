@@ -1,0 +1,80 @@
+.view .tiptap {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    box-shadow: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    ol {
+        padding-left: 20px;
+        list-style-type: decimal;
+    }
+
+    ul {
+        padding-left: 20px;
+        list-style-type: disc;
+    }
+
+    a {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 500px) {
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        ol {
+            padding-left: 20px;
+            list-style-type: decimal;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+    }
+
+
+}

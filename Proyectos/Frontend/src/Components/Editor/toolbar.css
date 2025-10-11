@@ -1,0 +1,55 @@
+.toolbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.296);
+    border-radius: 6px;
+    margin-bottom: 4px;
+    overflow: scroll;
+    .left,
+    .right {
+        display: flex;
+
+        button {
+            background: none;
+            color: black;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+
+            svg {
+                width: 16px;
+            }
+
+            @media screen and (max-width: 500px) {
+
+                svg {
+                    width: 12px;
+                }
+                
+            }
+
+            &:hover {
+                background: #c4e3ff;
+            }
+
+            &.active {
+                background: #0e8eff;
+                color: #fff;
+            }
+        }
+
+        .btnGuardar {
+            background: #0e8eff;
+            color: #fff;
+
+            &:hover {
+                background: #007ae6;
+            }
+        }
+    }
+}
