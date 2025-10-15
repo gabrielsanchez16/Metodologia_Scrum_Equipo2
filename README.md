@@ -1,7 +1,7 @@
 <div align="center">
 
 # Proyecto Gestión de Talleres
-**Backend | Proyecto Educativo | API REST**
+**Backend | Proyecto | API REST**
 
 Un sistema integral para optimizar la administración de talleres mecánicos, conectando clientes, mecánicos y administradores.
 
@@ -116,12 +116,11 @@ En conclusión, **Scrum resultó ser una metodología ideal** para el proyecto *
 | Categoría | Tecnologías |
 |:--|:--|
 | Backend | Node.js · Express.js |
-| Base de Datos | PostgreSQL / MySQL |
+| Base de Datos | MySQL / Sequelize |
 | Autenticación | JWT |
-| Almacenamiento | AWS S3 / Cloudinary |
-| Tiempo Real | Socket.IO |
-| Pagos | Stripe / PayPal |
-| Herramientas | Git · GitHub · Postman · VSCode |
+| Almacenamiento | Hostinger / Cloudinary / Mailtrap |
+| Frontend | React, Tailwind, Typescript |
+| Herramientas | Git · GitHub · Postman · VSCode · PhpMyAdmin |
 
 ---
 
