@@ -21,8 +21,6 @@ El **Proyecto Gestión de Talleres** busca implementar una aplicación que permi
 
 La metodología seleccionada fue **Scrum**, ya que permite organizar el trabajo en ciclos cortos, entregar resultados continuos y mantener comunicación directa con el **Product Owner**, garantizando que el producto final cumpla con los objetivos del negocio.  
 
-Perfecto, aquí tienes el mismo texto con una **redacción más técnica, formal y coherente**, manteniendo el enfoque profesional de un **experto en desarrollo web**:
-
 ---
 
 El **Proyecto Gestión de Talleres** tiene como objetivo desarrollar una aplicación web integral que permita a los talleres mecánicos optimizar la administración de sus procesos operativos. La solución gestionará de manera eficiente los módulos de **clientes, mecánicos, motocicletas, órdenes de trabajo, inventarios, notificaciones y pagos**, garantizando la trazabilidad y el control en tiempo real de cada operación.
