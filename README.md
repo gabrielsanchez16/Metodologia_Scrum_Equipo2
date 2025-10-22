@@ -1,153 +1,176 @@
 <div align="center">
 
-# Proyecto Gestión de Talleres
-**Backend | Proyecto | API REST**
+#  Proyecto Gestión de Talleres 
+## **Backend | Proyecto Educativo | API REST**
 
-Un sistema integral para optimizar la administración de talleres mecánicos, conectando clientes, mecánicos y administradores.
+Un **sistema integral** para **optimizar la administración** de talleres mecánicos, conectando clientes, mecánicos y administradores. ¡La eficiencia al alcance de tu mano!
 
 ---
 
 ![Estado](https://img.shields.io/badge/STATUS-En%20Desarrollo-00ffcc?style=for-the-badge&logo=github)
 ![Licencia](https://img.shields.io/badge/Licencia-MIT-8a2be2?style=for-the-badge)
 ![Stack](https://img.shields.io/badge/Stack-Node.js%20%7C%20Express%20%7C%20PostgreSQL-ff007f?style=for-the-badge)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
 
 </div>
 
 ---
 
-<h2 align="center">Resumen del Proyecto</h2>
+<h2 align="center"> Resumen del Proyecto </h2>
 
-El **Proyecto Gestión de Talleres** busca implementar una aplicación que permita a los talleres mecánicos administrar de forma eficiente sus operaciones: clientes, mecánicos, motocicletas, órdenes de trabajo, inventarios, notificaciones y pagos.  
+El **Proyecto Gestión de Talleres** es una potente **API REST** diseñada para que los talleres mecánicos administren eficientemente todas sus operaciones: **clientes, mecánicos, vehículos, órdenes de trabajo, inventarios, notificaciones y pagos.**
 
-La metodología seleccionada fue **Scrum**, ya que permite organizar el trabajo en ciclos cortos, entregar resultados continuos y mantener comunicación directa con el **Product Owner**, garantizando que el producto final cumpla con los objetivos del negocio.  
-
----
-
-El **Proyecto Gestión de Talleres** tiene como objetivo desarrollar una aplicación web integral que permita a los talleres mecánicos optimizar la administración de sus procesos operativos. La solución gestionará de manera eficiente los módulos de **clientes, mecánicos, motocicletas, órdenes de trabajo, inventarios, notificaciones y pagos**, garantizando la trazabilidad y el control en tiempo real de cada operación.
-
-Para el desarrollo del sistema se adoptó la **metodología ágil Scrum**, debido a su enfoque iterativo e incremental que facilita la entrega continua de funcionalidades y la mejora progresiva del producto. Este enfoque permite una **comunicación constante con el Product Owner**, asegurando que cada sprint genere entregables funcionales alineados con los requerimientos del negocio y los objetivos estratégicos del proyecto.
-
-Scrum, además, proporciona una estructura flexible para **gestionar cambios en los requerimientos**, fomentar la colaboración entre los miembros del equipo de desarrollo y mantener una visión clara del avance del proyecto mediante reuniones periódicas de seguimiento (Daily Scrum, Sprint Review y Retrospective). De esta manera, se garantiza que la aplicación evolucione de forma controlada, priorizando las necesidades reales del taller y asegurando un producto final robusto, escalable y orientado a la mejora de la productividad.
+La metodología ágil seleccionada fue ** Scrum**, la cual nos permitió organizar el trabajo en ciclos cortos (**Sprints**), garantizar entregas funcionales continuas y mantener una comunicación directa con el **Product Owner**, asegurando que el producto final esté perfectamente alineado con los objetivos de negocio.
 
 ---
 
+<h3 align="center"> Objetivos Clave del Proyecto </h3>
 
-<h3 align="center">Objetivos del Proyecto</h3>
-
-- Mejorar la productividad y eficiencia en los procesos.  
-- Garantizar la trazabilidad de la información (clientes, servicios y repuestos).  
-- Ofrecer una mejor experiencia al cliente mediante notificaciones y seguimiento en tiempo real.  
-- Facilitar la toma de decisiones mediante reportes financieros y administrativos.  
-
----
-
-<h2 align="center">Metodología Scrum</h2>
-
-El equipo aplicó **Scrum** para dividir el desarrollo en sprints, logrando entregas funcionales, control de avances y comunicación efectiva.  
-
-**Roles principales:**
-- Product Owner: define y prioriza requisitos.  
-- Scrum Master: guía el proceso y elimina impedimentos.  
-- Development Team: desarrolla las funcionalidades (Frontend, Backend y FullStack).  
-
-**Artefactos Scrum:**
-- Product Backlog: lista de los 23 requisitos funcionales del sistema.  
-- Sprint Backlog: tareas priorizadas asignadas al equipo.  
-- Incremento: entregables funcionales por sprint.  
+- **Productividad Máxima:** Mejorar la eficiencia en los procesos internos del taller.
+- **Trazabilidad Total:** Garantizar el seguimiento completo de clientes, servicios y repuestos.
+- **Experiencia Premium:** Ofrecer seguimiento en tiempo real y notificaciones al cliente.
+- **Decisiones Inteligentes:** Facilitar la toma de decisiones con reportes financieros y administrativos.
 
 ---
 
-<h3 align="center">Aplicación de Scrum en el Proyecto</h3>
+<h2 align="center"> Metodología Ágil: Scrum </h2>
 
-1. Reunión inicial con el Product Owner para levantar los 23 requisitos.  
-2. Construcción del Product Backlog con todos los requerimientos funcionales.  
-3. Sprint Planning Meeting: priorización de requisitos según valor de negocio.  
-4. Creación del Sprint Backlog con asignación de tareas.  
-5. Daily Scrum: seguimiento de avances.  
-6. Sprint Review y Retrospective: validación de resultados y mejora continua.  
+El equipo aplicó **Scrum** para estructurar el desarrollo, logrando entregas funcionales, un control de avances preciso y una comunicación altamente efectiva.
 
----
+### Roles Principales 
 
-<h2 align="center">Módulos Principales del Sistema</h2>
+| Rol | Función Principal |
+| :--- | :--- |
+| **Product Owner** | Define y prioriza todos los requisitos (el *qué*). |
+| **Scrum Master** | Guía el proceso, protege al equipo y elimina impedimentos. |
+| **Development Team** | Desarrolla las funcionalidades (Backend/Frontend/FullStack). |
 
-- Clientes y Mecánicos: registro, administración y roles.  
-- Motocicletas: información detallada y vinculación con clientes.  
-- Órdenes de Trabajo: descripción de servicios, repuestos y seguimiento.  
-- Inventario: control de entradas, salidas y alertas de stock.  
-- Notificaciones y Cotizaciones: comunicación directa con clientes.  
-- Finanzas: reportes, planes de suscripción y pasarela de pagos.  
-- Agenda de Citas: programación de servicios para clientes.  
+### Artefactos Esenciales 
 
----
+- **Product Backlog (23 Requisitos):** Lista maestra y priorizada de las funcionalidades del sistema.
+- **Sprint Backlog:** Tareas específicas y priorizadas para ser completadas en un Sprint.
+- **Incremento:** La suma de todos los elementos completados en un Sprint, listos para ser entregados.
 
-<h2 align="center">Evidencias en Miro</h2>
+### Aplicación de Scrum en 6 Pasos 
 
-- Captura del Product Backlog con los 23 requisitos.  
-- Lista priorizada en la Sprint Planning Meeting.  
-- Sprint Backlog con asignación de tareas por rol.  
-- [Ver tablero en Miro](https://miro.com/welcomeonboard/ZjdTYUVVR1JMbnJaeTJ3RjhlVGFVR2cyYzEvaEVqOFArT2dhZjlSSVBxZWJmbjVwTlkrUnJ3UzVyalBhWlkyT3BZNkxLTkEvSmRyQ1B0YUFWa2JkKzMzQllpbGtERjAyS29ZMjBjZjRmcEE1YUVnQmdTVGJWMGFYVnZQZ1VNRDhQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=835847404985)
+1. **Reunión inicial** con el Product Owner para levantar los 23 requisitos.
+2. Construcción del **Product Backlog**.
+3. **Sprint Planning:** Priorización por valor de negocio y definición del Sprint Goal.
+4. Creación del **Sprint Backlog** con asignación de tareas por rol.
+5. **Daily Scrum** (Daily Stand-up): 15 minutos de seguimiento diario de avances.
+6. **Sprint Review** y **Retrospective:** Validación de resultados y mejora continua del proceso.
 
 ---
 
-<h2 align="center">Conclusiones</h2>
+<h2 align="center"> Definiciones Clave para Entender el Proyecto </h2>
 
-La aplicación de **Scrum** permitió organizar los requisitos del sistema, priorizarlos según las necesidades del negocio y distribuir el trabajo equitativamente.  
-El uso de tableros en **Miro** fortaleció la trazabilidad del proyecto, mostrando claramente el avance desde los requerimientos hasta las tareas completadas.  
-
-En conclusión, **Scrum resultó ser una metodología ideal** para el proyecto *Gestión de Talleres*, permitiendo entregas iterativas, comunicación constante y un producto alineado con los objetivos del cliente.  
-
----
-
-<h2 align="center">Características Técnicas</h2>
-
-> Todo lo que un taller necesita, en un solo sistema.
-
-- Login y Registro (autenticación JWT)  
-- Roles y permisos personalizados  
-- Gestión de clientes y mecánicos  
-- Registro de motocicletas asociadas a clientes  
-- Órdenes de trabajo con descripción detallada  
-- Adjuntar repuestos y consumibles  
-- Seguimiento en tiempo real  
-- Notificaciones instantáneas  
-- Control de inventario con alertas  
-- Subida de evidencias  
-- Reportes financieros y cotizaciones  
-- Visualización de ventas  
-- Pasarela de pagos  
-- API pública para apps móviles  
-- Agenda de citas  
+| Concepto | Definición Corta y Sencilla |
+| :--- | :--- |
+| **Cliente** | Persona o empresa que solicita un servicio de reparación o mantenimiento. |
+| **Mecánico** | Usuario con el rol de ejecutar los servicios y actualizar el estado de las órdenes. |
+| **Registro** | Proceso de ingresar un nuevo dato (ej. nuevo cliente, nueva motocicleta) al sistema. |
+| **Administración** | Conjunto de funcionalidades para gestionar, editar y eliminar datos del sistema. |
+| **Roles** | Permisos y funcionalidades específicas asignadas a cada tipo de usuario (ej. Admin, Mecánico, Cliente). |
+| **Inventario** | Control de existencias (stock) de repuestos, aceites y consumibles en el taller. |
+| **Orden de Trabajo (OT)** | Documento que detalla el servicio solicitado, repuestos usados y el estado actual de la reparación. |
+| **Módulo Principal** | Conjunto de funcionalidades relacionadas a un área clave del sistema (ej. Módulo Finanzas). |
 
 ---
 
-<h2 align="center">Stack Tecnológico</h2>
+<h2 align="center"> Módulos Principales del Sistema (Backend) </h2>
 
-| Categoría | Tecnologías |
-|:--|:--|
-| Backend | Node.js · Express.js |
-| Base de Datos | MySQL / Sequelize |
-| Autenticación | JWT |
-| Almacenamiento | Hostinger / Cloudinary / Mailtrap |
-| Frontend | React, Tailwind, Typescript |
-| Herramientas | Git · GitHub · Postman · VSCode · PhpMyAdmin |
+El sistema está diseñado modularmente para una gestión completa:
+
+| Módulo | Descripción |
+| :--- | :--- |
+| **Clientes y Mecánicos** | **Registro, administración** de usuarios y definición de **roles** (acceso a funcionalidades). |
+| **Motocicletas** | Información detallada del vehículo y vinculación directa con el **cliente**. |
+| **Órdenes de Trabajo** | Creación, seguimiento y registro de servicios, repuestos y mano de obra. |
+| **Inventario** | Control de entradas/salidas, gestión de stock y **alertas** de bajo nivel. |
+| **Notificaciones** | Envío de cotizaciones, actualizaciones de estado y recordatorios al **cliente**. |
+| **Finanzas** | Generación de reportes, facturación, planes de suscripción y pasarela de pagos. |
+| **Agenda de Citas** | Módulo para la programación y gestión de servicios futuros con el **cliente**. |
 
 ---
 
-<h2 align="center">Instalación y Ejecución</h2>
+<h2 align="center"> Evidencias de Scrum en Miro </h2>
+
+La transparencia del proyecto se gestionó en Miro, donde se puede visualizar todo el proceso:
+
+- Captura del **Product Backlog** con los 23 requisitos.
+- Lista priorizada generada en la **Sprint Planning Meeting**.
+- **Sprint Backlog** con la asignación de tareas por rol y su estado.
+
+**[Ver tablero de Miro Completo Aquí](https://miro.com/welcomeonboard/ZjdTYUVVR1JMbnJaeTJ3RjhlVGFVR2cyYzEvaEVqOFArT2dhZjlSSVBxZWJmbjVwTlkrUnJ3UzVyalBhWlkyT3BZNkxLTkEvSmRyQ1B0YUFWa2JkKzMzQllpbGtERjAyS29ZMjBjZjRmcEE1YUVnQmdTVGJWMGFYVnZQZ1VNRDhQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=835847404985)** 
+
+---
+
+<h2 align="center"> Conclusiones del Proyecto </h2>
+
+La adopción de **Scrum** fue crucial. Permitió organizar y **priorizar** los requisitos del sistema de acuerdo con el **valor de negocio**, asegurando que el equipo estuviera siempre enfocado en las tareas más importantes.
+
+El uso de tableros visuales en **Miro** fortaleció la **trazabilidad**, facilitando la comprensión del avance desde el requisito inicial hasta la tarea completada.
+
+**En resumen: Scrum es la metodología ideal** para el *Proyecto Gestión de Talleres*, garantizando entregas iterativas, comunicación constante y un producto perfectamente alineado con los objetivos del cliente.
+
+---
+
+<h2 align="center"> Características Técnicas de la API </h2>
+
+
+
+| Característica | Descripción |
+| :--- | :--- |
+| **Seguridad** | Login y **Registro** con autenticación JWT (JSON Web Tokens). |
+| **Usuarios** | **Roles** y **administración** de **clientes** y **mecánicos** con permisos personalizados. |
+| **Vehículos** | **Registro** y gestión de **motocicletas** asociadas a cada **cliente**. |
+| **Servicios** | Creación de **órdenes de trabajo** detalladas y **adjuntar repuestos**. |
+| **Seguimiento** | **Notificaciones** instantáneas y seguimiento en tiempo real de la **orden de trabajo**. |
+| **Stock** | **Inventario** dinámico con **alertas** automáticas de bajo stock. |
+| **Evidencias** | Funcionalidad para la subida de fotos y documentos. |
+| **Finanzas** | Reportes, cotizaciones, visualización de ventas y pasarela de pagos. |
+| **Integración** | API pública diseñada para la conexión con futuras apps móviles. |
+| **Organización** | **Agenda de citas** integrada para una mejor planificación del tiempo. |
+
+---
+
+<h2 align="center"> Stack Tecnológico (Backend) </h2>
+
+Las tecnologías elegidas garantizan un backend robusto, escalable y de alto rendimiento.
+
+| Categoría | Tecnologías Clave | Propósito |
+| :--- | :--- | :--- |
+| **Backend Core** | Node.js · Express.js | Entorno de ejecución y Framework minimalista para la API. |
+| **Base de Datos** | PostgreSQL / MySQL | Almacenamiento relacional, robusto y confiable. |
+| **Autenticación** | JWT | Generación de tokens seguros para **registro** y login. |
+| **Almacenamiento** | AWS S3 / Cloudinary | Almacenamiento escalable de imágenes (evidencias). |
+| **Tiempo Real** | Socket.IO | Manejo de **notificaciones** y seguimiento instantáneo. |
+| **Pagos** | Stripe / PayPal | Integración de **pasarela de pagos**. |
+| **Herramientas** | Git · GitHub · Postman · VSCode | Gestión de código, pruebas y desarrollo. |
+
+---
+
+<h2 align="center"> Instalación y Ejecución Local </h2>
+
+Sigue estos sencillos pasos para levantar el servidor en tu entorno de desarrollo.
 
 ```bash
-# 1️⃣ Clonar el repositorio
-git clone https://github.com/MIPablosky/Metodologia_Scrum_Equipo2.git
+# 1️⃣ Clonar el repositorio del Backend
+git clone [https://github.com/MIPablosky/Metodologia_Scrum_Equipo2.git](https://github.com/MIPablosky/Metodologia_Scrum_Equipo2.git)
 cd Metodologia_Scrum_Equipo2
 
-# 2️⃣ Instalar dependencias
+# 2️⃣ Instalar las dependencias de Node.js
 npm install
 
-# 3️⃣ Crear el archivo de entorno
-cp .env.example .env
+# 3️⃣ Configurar variables de entorno
+# IMPORTANTE: Crear el archivo .env a partir del ejemplo y completar los datos
+cp .env.example .env 
 
-# 4️⃣ Iniciar el servidor
+# 4️⃣ Iniciar el servidor en modo desarrollo
 npm run dev
+
+# ¡Listo! El servidor estará corriendo en el puerto configurado (ej. http://localhost:3000)
+
 ```
 | Nombre              | Rol                    |
 | :------------------ | :--------------------- |
