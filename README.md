@@ -153,7 +153,7 @@ npm run dev
 | :------------------ | :--------------------- |
 | Pablo Murillo Lemus | Product Owner          |
 | Gabriel Zanches     | Scrum Master           |
-| Jhon Román Cuero    | Arquitecto de Software |
+| Juan Román Cuero    | Arquitecto de Software |
 | Jader Riascos       | Desarrollador Frontend |
 | Darío Restrepo      | Desarrollador Backend  |
 | Jhoan Murillo       | Tester                 |
