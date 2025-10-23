@@ -111,7 +111,7 @@ La transparencia del proyecto se gestionó en Miro, donde se puede visualizar to
 - Lista priorizada generada en la **Sprint Planning Meeting**.
 - **Sprint Backlog** con la asignación de tareas por rol y su estado.
 
-**[Ver tablero de Miro Completo Aquí](https://miro.com/welcomeonboard/ZjdTYUVVR1JMbnJaeTJ3RjhlVGFVR2cyYzEvaEVqOFArT2dhZjlSSVBxZWJmbjVwTlkrUnJ3UzVyalBhWlkyT3BZNkxLTkEvSmRyQ1B0YUFWa2JkKzMzQllpbGtERjAyS29ZMjBjZjRmcEE1YUVnQmdTVGJWMGFYVnZQZ1VNRDhQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=835847404985)** 
+**[Ver tablero de Miro Completo Aquí](https://miro.com/welcomeonboard/cldmNXFrOTVuM291d09MUXlvT0drblZmeGpjTFVXTTJ0S3hzbXhKNEVaY3R1TFZReEp3NlZBSkM0WnZRbnFQSWtiTTR6eG1aL2RjL0xVem5UT1hGOVJsOWhRMlc0Z1lPWTlVR2M2WkZYbjdDRFl1QmhoZ3FtMHJJN2pCSWJrVUxNakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share_link_id=391797611012)** 
 
 ---
 
@@ -185,7 +185,7 @@ npm run dev
 | Nombre              | Rol                    |
 | :------------------ | :--------------------- |
 | Pablo Murillo Lemus | Product Owner          |
-| Gabriel Zanches     | Scrum Master           |
+| Gabriel Sánchez     | Scrum Master           |
 | Juan Román Cuero    | Arquitecto de Software |
 | Jader Riascos       | Desarrollador Frontend |
 | Darío Restrepo      | Desarrollador Backend  |
