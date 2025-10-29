@@ -21,3 +21,7 @@ const db = new Sequelize(process.env.DB_NAME,process.env.DB_USER,process.env.DB_
 module.exports ={
     db
 }
+
+// Nota: La configuración de Sequelize incluye la opción freezeTableName para evitar 
+// la pluralización automática de los nombres de las tablas en la base de datos.
+// pueden buscar que es eso muchachos..

@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const { db } = require('../config/db.js');
-const { up } = require('../seeders/20250710233044-nombre-del-seeder.js');
+const { up } = require('../seeders/20250710233044-nombre-del-seeder.js'); 
 
 const Brand = db.define("brand", {
     id: {
@@ -14,7 +14,7 @@ const Brand = db.define("brand", {
         allowNull: false
     }
 },{
-    freezeTableName: true, // 👈 evita la pluralización automática
+    freezeTableName: true, // evita la pluralización automática del nombre de la tabla
 });
 
 
