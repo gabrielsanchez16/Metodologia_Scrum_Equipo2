@@ -23,6 +23,16 @@ El **Proyecto Gestión de Talleres** es una potente **API REST** diseñada para 
 La metodología ágil seleccionada fue ** Scrum**, la cual nos permitió organizar el trabajo en ciclos cortos (**Sprints**), garantizar entregas funcionales continuas y mantener una comunicación directa con el **Product Owner**, asegurando que el producto final esté perfectamente alineado con los objetivos de negocio.
 
 ---
+-------
+
+El Proyecto Gestión de Talleres tiene como objetivo desarrollar una aplicación web integral que permita a los talleres mecánicos optimizar la administración de sus procesos operativos. La solución gestionará de manera eficiente los módulos de clientes, mecánicos, motocicletas, órdenes de trabajo, inventarios, notificaciones y pagos, garantizando la trazabilidad y el control en tiempo real de cada operación.
+
+Para el desarrollo del sistema se adoptó la metodología ágil Scrum, debido a su enfoque iterativo e incremental que facilita la entrega continua de funcionalidades y la mejora progresiva del producto. Este enfoque permite una comunicación constante con el Product Owner, asegurando que cada sprint genere entregables funcionales alineados con los requerimientos del negocio y los objetivos estratégicos del proyecto.
+
+Scrum, además, proporciona una estructura flexible para gestionar cambios en los requerimientos, fomentar la colaboración entre los miembros del equipo de desarrollo y mantener una visión clara del avance del proyecto mediante reuniones periódicas de seguimiento (Daily Scrum, Sprint Review y Retrospective). De esta manera, se garantiza que la aplicación evolucione de forma controlada, priorizando las necesidades reales del taller y asegurando un producto final robusto, escalable y orientado a la mejora de la productividad.
+
+
+-------
 
 <h3 align="center"> Objetivos Clave del Proyecto </h3>
 
@@ -101,7 +111,7 @@ La transparencia del proyecto se gestionó en Miro, donde se puede visualizar to
 - Lista priorizada generada en la **Sprint Planning Meeting**.
 - **Sprint Backlog** con la asignación de tareas por rol y su estado.
 
-**[Ver tablero de Miro Completo Aquí](https://miro.com/welcomeonboard/ZjdTYUVVR1JMbnJaeTJ3RjhlVGFVR2cyYzEvaEVqOFArT2dhZjlSSVBxZWJmbjVwTlkrUnJ3UzVyalBhWlkyT3BZNkxLTkEvSmRyQ1B0YUFWa2JkKzMzQllpbGtERjAyS29ZMjBjZjRmcEE1YUVnQmdTVGJWMGFYVnZQZ1VNRDhQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=835847404985)** 
+**[Ver tablero de Miro Completo Aquí](https://miro.com/welcomeonboard/cldmNXFrOTVuM291d09MUXlvT0drblZmeGpjTFVXTTJ0S3hzbXhKNEVaY3R1TFZReEp3NlZBSkM0WnZRbnFQSWtiTTR6eG1aL2RjL0xVem5UT1hGOVJsOWhRMlc0Z1lPWTlVR2M2WkZYbjdDRFl1QmhoZ3FtMHJJN2pCSWJrVUxNakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share_link_id=391797611012)** 
 
 ---
 
@@ -175,7 +185,7 @@ npm run dev
 | Nombre              | Rol                    |
 | :------------------ | :--------------------- |
 | Pablo Murillo Lemus | Product Owner          |
-| Gabriel Zanches     | Scrum Master           |
+| Gabriel Sánchez     | Scrum Master           |
 | Juan Román Cuero    | Arquitecto de Software |
 | Jader Riascos       | Desarrollador Frontend |
 | Darío Restrepo      | Desarrollador Backend  |
