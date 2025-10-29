@@ -1,6 +1,6 @@
 const { Motorcycle } = require('../models/Motorcycle.js');
 const {Owner} = require("../models/Owner.js")
-const {Brand} = require("../models/Brand.js"); // revisado importante del modelo
+const {Brand} = require("../models/Brand.js"); 
 const { WorkOrder } = require('../models/WorkOrder.js');
 const { ServiceByWorkshop } = require('../models/ServiceByWorkshop.js');
 
@@ -95,7 +95,6 @@ const updateMotorcycle = async (id, model, plate, year, id_brand, id_owner) => {
         motorcycle.plate = plate;
     }
 
-    // Actualizar otros campos si se proporcionan
     if (model !== undefined) motorcycle.model = model;
     if (year !== undefined) motorcycle.year = year;
     if (id_brand !== undefined) motorcycle.id_brand = id_brand;
@@ -105,7 +104,8 @@ const updateMotorcycle = async (id, model, plate, year, id_brand, id_owner) => {
 
     return motorcycle;
 }
- // Exportar las funciones del controlador
+
+
 module.exports = {
     createMotorcycle,
     getAllMotorcycles,
@@ -113,6 +113,3 @@ module.exports = {
     deleteMotorcycle,
     updateMotorcycle
 }
-
-//Agregando notas importantes para el desarrollo futuro y funcionalidades 
-//Nota: Al actualizar la placa de una motocicleta, se verifica que la nueva placa no esté ya registrada en el mismo taller para evitar duplicados.
