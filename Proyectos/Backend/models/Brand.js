@@ -1,0 +1,23 @@
+const { Sequelize, DataTypes } = require('sequelize');
+const { db } = require('../config/db.js');
+const { up } = require('../seeders/20250710233044-nombre-del-seeder.js'); 
+
+const Brand = db.define("brand", {
+    id: {
+        primaryKey: true,
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4, // Use Sequelize's built-in UUID function
+        allowNull: false
+    },
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    }
+},{
+    freezeTableName: true, // evita la pluralización automática del nombre de la tabla
+});
+
+
+module.exports = {
+    Brand
+};
