@@ -6,7 +6,7 @@ const {validateCreateMotorcycle} = require('../middlewares/Motorcycle/validatedM
 const authenticate = require('../middlewares/Auth/auth.middleware.js')
 const handleValidation = require('../middlewares/ErrosValidation/handleValidation.js');
 
-
+// Rutas para motocicletas con validaciones
 router
     .route('/register')
     .post(
