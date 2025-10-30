@@ -4,6 +4,7 @@ const {Brand} = require("../models/Brand.js");
 const { WorkOrder } = require('../models/WorkOrder.js');
 const { ServiceByWorkshop } = require('../models/ServiceByWorkshop.js');
 
+// Controlador para crear motocicleta
 const createMotorcycle = async (model, plate, year, id_workshop, id_brand, id_owner) => {
     const existMotorcycle = await Motorcycle.findOne({ where: { plate,id_workshop  } });
     if (existMotorcycle) {
@@ -21,6 +22,7 @@ const createMotorcycle = async (model, plate, year, id_workshop, id_brand, id_ow
     return motorcycle;
 };
 
+// Obtener todas las motos con sus relaciones
 const getAllMotorcycles = async (id_workshop) => {
     let motorcycles = await Motorcycle.findAll({
         where: {
