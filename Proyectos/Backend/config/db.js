@@ -1,5 +1,6 @@
-const {Sequelize} = require('sequelize')
-const dotenv = require('dotenv')
+const {Sequelize} = require('sequelize')//importar sequelize
+const dotenv = require('dotenv')//--- IGNORE ---
+//Reestruturación para cargar variables de entorno creo que se rompio XD
 dotenv.config({path:'.env'})
 const db = new Sequelize(process.env.DB_NAME,process.env.DB_USER,process.env.DB_PASS,{
     host: process.env.DB_HOST,
@@ -21,3 +22,4 @@ const db = new Sequelize(process.env.DB_NAME,process.env.DB_USER,process.env.DB_
 module.exports ={
     db
 }
+
