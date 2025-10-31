@@ -312,14 +312,14 @@ npm run lint      # Ejecuta ESLint para análisis de código
 
 <h2 align="center"> 👥 Equipo de Desarrollo </h2>
 
-| Nombre              | Rol                    | Responsabilidad Principal                                     |
-| :------------------ | :--------------------- | :------------------------------------------------------------ |
-| Pablo Murillo Lemus | Product Owner          | Definición de requisitos y priorización del Product Backlog   |
-| Gabriel Sánchez     | Scrum Master           | Facilitación del proceso Scrum y eliminación de impedimentos  |
-| Juan Román Cuero    | Arquitecto de Software | Diseño de arquitectura del sistema y decisiones técnicas      |
-| Jader Riascos       | Desarrollador Frontend | Desarrollo de interfaz React, UX/UI y componentes             |
-| Darío Restrepo      | Desarrollador Backend  | Desarrollo de API REST, base de datos y lógica de negocio     |
-| Jhoan Murillo       | Tester                 | Pruebas de calidad, testing funcional y documentación de bugs |
+| Nombre                             | Rol                    | Responsabilidad Principal                                     |
+| :--------------------------------- | :--------------------- | :------------------------------------------------------------ |
+| Pablo Murillo Lemus                | Product Owner          | Definición de requisitos y priorización del Product Backlog   |
+| Gabriel Alejandro Sánchez Alarcón  | Scrum Master           | Facilitación del proceso Scrum y eliminación de impedimentos  |
+| Juan Román Cuero Ordoñez           | Arquitecto de Software | Diseño de arquitectura del sistema y decisiones técnicas      |
+| Jhon Jader Riascos Angulo          | Desarrollador Frontend | Desarrollo de interfaz React, UX/UI y componentes             |
+| Darío Restrepo Landazury           | Desarrollador Backend  | Desarrollo de API REST, base de datos y lógica de negocio     |
+| Johan Alexander Murillo Sinisterra | Tester                 | Pruebas de calidad, testing funcional y documentación de bugs |
 
 ---
 
