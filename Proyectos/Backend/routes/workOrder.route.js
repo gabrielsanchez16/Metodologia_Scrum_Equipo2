@@ -8,7 +8,7 @@ const handleValidation = require('../middlewares/ErrosValidation/handleValidatio
 const {validateWorkOrder} = require('../middlewares/WorkOrder/ValidatedWorkOrder.js');
 
 
-
+// Rutas para ordenes de trabajo con validaciones
 router
     .route('/register')
     .post(authenticate, validateWorkOrder, handleValidation, create);
