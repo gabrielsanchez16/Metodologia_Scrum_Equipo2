@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken');
 const SECRET = process.env.JWT_SECRET || 'mi_clave_secreta';
 
+// Middleware para verificar token JWT y autorizacion de usuarios
 const authenticate = (req, res, next) => {
     const authHeader = req.headers.authorization;
 

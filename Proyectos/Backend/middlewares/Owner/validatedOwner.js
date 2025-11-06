@@ -1,5 +1,6 @@
 const { body, param } = require('express-validator');
 
+// Validaciones para creacion de clientes
 const validateCreateOwner = [
     body('name')
         .notEmpty().withMessage('El nombre es obligatorio')

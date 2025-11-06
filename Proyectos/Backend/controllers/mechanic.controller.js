@@ -1,7 +1,8 @@
 const {Mechanic} = require('../models/Mechanic');
 const { WorkOrder } = require('../models/WorkOrder.js');
 
-
+// Controlador para gestion de mecanicos
+// Crear nuevo mecanico
 const createMechanic = async (name,id_workshop) => {
     const mechanic = await Mechanic.create({
         name,
@@ -10,6 +11,7 @@ const createMechanic = async (name,id_workshop) => {
     return mechanic;
 }
 
+// Obtener mecanicos por taller
 const getMechanicsByWorkshop = async (id_workshop) => {
     const mechanics = await Mechanic.findAll({
         where: {

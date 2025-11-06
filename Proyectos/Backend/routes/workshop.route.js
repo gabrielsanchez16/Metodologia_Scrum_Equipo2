@@ -15,7 +15,7 @@ const {upload} = require('../middlewares/Multer/multer.js');
 
 
 
-
+// Ruta para registro de talleres
 router
     .route('/register')
     .post(
@@ -25,6 +25,7 @@ router
         create
     );
 
+// Ruta para login de talleres
 router
     .route('/login')
     .post(

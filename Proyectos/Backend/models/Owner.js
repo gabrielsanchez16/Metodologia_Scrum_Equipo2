@@ -1,6 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const { db } = require('../config/db.js');
 
+// Modelo de clientes propietarios de motos
 const Owner = db.define("owner", {
     id: {
         primaryKey: true,

@@ -2,9 +2,10 @@ const { Workshop } = require('../models/Workshop');
 const {Suscription} = require("../models/Suscription")
 const jwt = require('jsonwebtoken');
 
-// Usa dotenv o config para no exponer claves
+// Configuracion de autenticacion con JWT
 const SECRET = process.env.JWT_SECRET || 'mi_clave_secreta';
 
+// Funcion para login de talleres
 const login = async (email, password) => {
     const workshop = await Workshop.findOne({ where: { email } });
 

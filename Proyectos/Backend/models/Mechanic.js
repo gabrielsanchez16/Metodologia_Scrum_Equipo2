@@ -1,13 +1,15 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const { db } = require('../config/db.js');
 
+// Modelo de mecanicos del taller
 const Mechanic = db.define("mechanic", {
     id: {
         primaryKey: true,
         type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4, // Use Sequelize's built-in UUID function
+        defaultValue: DataTypes.UUIDV4,
         allowNull: false
     },
+    // Nombre del mecanico
     name: {
         type: DataTypes.STRING,
         allowNull: false

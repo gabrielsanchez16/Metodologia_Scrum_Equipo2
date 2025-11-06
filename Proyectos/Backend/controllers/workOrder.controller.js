@@ -7,7 +7,7 @@ const {Owner} = require("../models/Owner.js");
 
 const { sendSMS } = require('../utils/msgService.js');
 
-
+// Controlador para crear ordenes de trabajo
 const createWorkOrder = async (title, date, description, recommendations, price, id_motorcycle, id_mechanic,discount) => {
     try {
         
@@ -78,6 +78,7 @@ const getWorkOrderByMechanic = async (id_mechanic) => {
     }
 }
 
+// Actualizar orden de trabajo existente
 const updateWorkOrder = async (id, title, date, description, recommendations, price, id_motorcycle, id_mechanic,discount) => {
     try {
         const workOrder = await WorkOrder.findOne({

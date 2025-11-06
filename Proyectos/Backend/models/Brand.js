@@ -2,6 +2,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 const { db } = require('../config/db.js');
 const { up } = require('../seeders/20250710233044-nombre-del-seeder.js'); 
 
+// Modelo de marcas de motocicletas
 const Brand = db.define("brand", {
     id: {
         primaryKey: true,
