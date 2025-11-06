@@ -1,5 +1,6 @@
 const AuthController = require('../controllers/auth.controller.js');
 
+// Handler HTTP para login
 const login = async (req, res) => {
     const { email, password } = req.body;
 
