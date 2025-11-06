@@ -1,6 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const { db } = require('../config/db.js');
 
+// Modelo para roles de usuarios
 const Role = db.define("role", {
     id: {
         primaryKey: true,

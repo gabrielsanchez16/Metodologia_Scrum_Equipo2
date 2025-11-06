@@ -2,6 +2,7 @@ const { Sequelize, DataTypes, UUID } = require('sequelize');
 const { db } = require('../config/db.js');
 const bcrypt = require('bcrypt') 
 
+// Modelo de trabajadores con relacion a roles
 const Worker = db.define("worker", {
     id: {
         primaryKey: true,
