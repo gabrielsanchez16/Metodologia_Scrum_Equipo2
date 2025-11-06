@@ -10,7 +10,7 @@ dotenv.config({ path: '.env' })
 // Estructura revisada
 // Funciones para gestionar servicios asociados a órdenes y talleres
 
-// Requerimiento numero 12: Definir estructura de base de datos para movimientos de inventario.
+// Requerimiento numero 12: Definir estructura de base de datos para movimientos de inventario..
 
 const createServiceByWorkshop = async (name_service, quantity_order, price_unit, id_order, id_service, id_workshop) => {
   const price_total = quantity_order * price_unit;

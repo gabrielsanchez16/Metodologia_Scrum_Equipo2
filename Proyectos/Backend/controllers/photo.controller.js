@@ -1,6 +1,13 @@
 const {Photo} = require('../models/Photo.js');
 const cloudinary = require('cloudinary').v2;
 
+
+// Arquitecto de Software: Juan Roman Cuero
+// Estrucutura revisada 
+// Funciones para registrar, actualizar y eliminar fotos asociadas a órdenes
+
+// Requerimiento numero 13: Establecer flujo de carga y almacenamiento seguro de archivos.
+
 const registerPhoto = async (id_order, path,public_id) => {
     try {
         const newPhoto = await Photo.create({

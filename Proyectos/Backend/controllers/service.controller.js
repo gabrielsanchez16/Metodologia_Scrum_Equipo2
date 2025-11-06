@@ -2,6 +2,11 @@ const { Service } = require('../models/Service.js');
 const { Op, fn, col, where } = require('sequelize');
 const { ServiceByWorkshop } = require('../models/ServiceByWorkshop.js');
 
+// Arquitecto de Software: Juan Roman Cuero
+// Estructura revisada
+// Funciones para gestionar servicios
+
+// Requerimiento numero 15: Crear lógica para los servicios de una orden de trabajo.
 
 const createService = async (id, name, price, brand, quantity, id_type, id_workshop) => {
   try {
