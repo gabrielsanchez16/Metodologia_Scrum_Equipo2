@@ -4,7 +4,7 @@ const {Suscription} = require('../models/Suscription');
 // Estructura revisada
 // Funciones para gestionar suscripciones
 
-// Requerimiento numero 17: Diseñar estructura de planes y condiciones asociadas.
+// Requerimiento numero 17: Diseñar estructura de planes y condiciones asociadas..
 
 const getAllSuscriptions = async () => {
   const suscriptions = await Suscription.findAll({
