@@ -2,7 +2,7 @@ const { Motorcycle } = require('../models/Motorcycle.js');
 const {Owner} = require('../models/Owner.js');
 const {Workshop} = require('../models/Workshop.js')
 
-
+// Controlador para gestion de clientes (owners)
 const createOwner = async (name,identification,id_workshop,phone,email) => {
     const existOwner = await Owner.findOne({ where: { identification } });
     if (existOwner) {
