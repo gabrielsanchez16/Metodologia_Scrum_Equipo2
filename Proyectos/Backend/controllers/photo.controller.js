@@ -6,7 +6,7 @@ const cloudinary = require('cloudinary').v2;
 // Estrucutura revisada 
 // Funciones para registrar, actualizar y eliminar fotos asociadas a órdenes
 
-// Requerimiento numero 13: Establecer flujo de carga y almacenamiento seguro de archivos.
+// Requerimiento numero 13: Establecer flujo de carga y almacenamiento seguro de archivos..
 
 const registerPhoto = async (id_order, path,public_id) => {
     try {
