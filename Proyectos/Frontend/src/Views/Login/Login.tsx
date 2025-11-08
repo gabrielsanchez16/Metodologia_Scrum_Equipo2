@@ -1,13 +1,21 @@
-import { LockClosedIcon, EnvelopeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
-import { useForm as useReactHookForm } from "react-hook-form";
-import type { LoginForm } from "../../Interface/auth";
-import { login as LoginApi } from '../../Utils/api';
-import { useAuth } from "../../hooks/useAuth";
-import { Link, useNavigate } from "react-router";
+// 🔹 Librerías externas
 import { useState } from "react";
-import Loading from "../../Components/Loading/Loading";
+import { useForm as useReactHookForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router";
 import { Title } from "react-head";
+
+// 🔹 Íconos
+import { LockClosedIcon, EnvelopeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 import { EyeIcon } from "lucide-react";
+
+// 🔹 Componentes internos
+import Loading from "../../Components/Loading/Loading";
+
+// 🔹 Hooks y utilidades
+import { useAuth } from "../../hooks/useAuth";
+import { login as LoginApi } from "../../Utils/api";
+import type { LoginForm } from "../../Interface/auth";
+
 
 
 
