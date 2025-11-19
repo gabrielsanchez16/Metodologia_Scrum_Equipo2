@@ -1,19 +1,38 @@
-import { useForm } from "react-hook-form";
-import type { WorkOrder } from "../../Interface/WorkOrder";
-import { useLocation, useNavigate } from "react-router";
+// React / Hooks
 import { useEffect, useState } from "react";
-import { getAllMechanics } from "../../Utils/api";
-import { useAuth } from "../../hooks/useAuth";
-import type { Mechanic } from "../../Interface/Mechanics";
-import { getAllServices } from "../../Utils/apiServices";
-import type { Service } from "../../Interface/Service";
-import { editOrder, getOrderById } from "../../Utils/apiWorkOrder";
-import { createServiceByWork, deleteServiceByWork, editServiceByWork } from "../../Utils/apiServiceByWork";
-import { deletePhotos, registerPhotos } from "../../Utils/apiPhoto";
+import { useForm } from "react-hook-form";
+import { useLocation, useNavigate } from "react-router";
+
+// Librerías externas
 import { toast } from "react-hot-toast";
-import type { ServiceByWork } from '../../Interface/ServiceByWork';
+
+// Hooks internos
+import { useAuth } from "../../hooks/useAuth";
+
+// Interfaces
+import type { WorkOrder } from "../../Interface/WorkOrder";
+import type { Mechanic } from "../../Interface/Mechanics";
+import type { Service } from "../../Interface/Service";
+import type { ServiceByWork } from "../../Interface/ServiceByWork";
+
+// Utils / API calls
+import { getAllMechanics } from "../../Utils/api";
+import { getAllServices } from "../../Utils/apiServices";
+import { editOrder, getOrderById } from "../../Utils/apiWorkOrder";
+import {
+    createServiceByWork,
+    deleteServiceByWork,
+    editServiceByWork
+} from "../../Utils/apiServiceByWork";
+import {
+    deletePhotos,
+    registerPhotos
+} from "../../Utils/apiPhoto";
+
+// Componentes
 import ModalService from "../../Components/ModalService/ModalService";
 import TipTap from "../../Components/Editor/TipTap";
+
 
 
 const WorkOrderEdit = () => {
@@ -350,6 +369,13 @@ const WorkOrderEdit = () => {
             <p className="text-gray-600 mb-6">
                 Edita la orden seleccionada, edita y anexale servicios, mecanico, recomendaciones... tambien podras editar las fotos del proceso
             </p>
+
+            {/*
+            Formulario de Edición de Órdenes de Trabajo
+            (Campos: título, descripción, recomendaciones,
+            precio, fecha, mecánico, servicios, fotos)
+            */}
+
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-white p-6 rounded-xl shadow-md">
                 {/* Título */}
                 <div>
