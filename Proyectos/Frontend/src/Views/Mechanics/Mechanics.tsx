@@ -1,3 +1,6 @@
+// Módulo de Registro y Control de Mecánicos
+// Permite crear, editar, listar y eliminar mecánicos asociados al taller del usuario.
+
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { UserCog, Trash2, Pencil } from "lucide-react";
@@ -6,7 +9,6 @@ import type { Mechanic } from "../../Interface/Mechanics";
 import { useAuth } from "../../hooks/useAuth";
 import toast from "react-hot-toast";
 import Loading from "../../Components/Loading/Loading";
-
 
 
 
@@ -115,7 +117,7 @@ const Mechanics = () => {
                 Gestiona a los mecánicos de tu taller. Podrás crear, editar o borrar.
             </p>
 
-            {/* Formulario */}
+            {/* Formulario para registrar o actualizar mecánicos */}
             <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="bg-white rounded-xl shadow p-5 mb-8 flex flex-col sm:flex-row items-center gap-4"
@@ -148,7 +150,7 @@ const Mechanics = () => {
                 <p className="text-red-600 mb-4 text-sm">{errors.name.message}</p>
             )}
 
-            {/* Tabla */}
+            {/* Visualización de mecánicos registrados */}
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-white rounded-xl shadow text-left">
                     <thead>
