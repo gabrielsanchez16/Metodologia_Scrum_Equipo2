@@ -1,18 +1,40 @@
-import { useEffect,  useState } from "react";
-import {  useForm } from "react-hook-form";
-import { Trash2, Pencil, Bike, CardSim, Calendar, PersonStandingIcon } from "lucide-react";
+// React
+import { useEffect, useState } from "react";
+
+// Formularios
+import { useForm } from "react-hook-form";
+
+// Ruteo
+import { Link, useNavigate } from "react-router";
+
+// Hooks
 import { useAuth } from "../../hooks/useAuth";
+
+// Tipos e Interfaces
 import type { Motorcycle } from "../../Interface/Motorcycles";
-import { createMotorcycle, deleteMotorcycle, editMotorcycle, getAllMotorcycles } from "../../Utils/apiMotorcycles";
-import { HomeIcon } from "@heroicons/react/16/solid";
-import { getAllClients } from "../../Utils/apiClients";
 import type { Client } from "../../Interface/Clients";
 import type { Brand } from "../../Interface/Brands";
+import type { WorkOrder } from "../../Interface/WorkOrder";
+
+// API Services
+import {
+    createMotorcycle,
+    deleteMotorcycle,
+    editMotorcycle,
+    getAllMotorcycles
+} from "../../Utils/apiMotorcycles";
+
+import { getAllClients } from "../../Utils/apiClients";
 import { getAllBrand } from "../../Utils/apiBrand";
-import { Link, useNavigate } from "react-router";
-import type { WorkOrder } from '../../Interface/WorkOrder';
 import { deleteOrder } from "../../Utils/apiWorkOrder";
+
+// Iconos
+import { Trash2, Pencil, Bike, CardSim, Calendar, PersonStandingIcon } from "lucide-react";
+import { HomeIcon } from "@heroicons/react/16/solid";
+
+// Notificaciones
 import { toast } from "react-hot-toast";
+
 
 
 const Motorcycles = () => {
@@ -183,7 +205,7 @@ const Motorcycles = () => {
                 Gestiona los vehiculos que llegan a tu taller. Podrás crear, editar o borrar.
             </p>
 
-
+            {/* Formulario para registrar o actualizar motocicletas */}
             <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="bg-white rounded-xl shadow p-5 mb-8 flex flex-wrap gap-4 justify-between"
@@ -249,7 +271,7 @@ const Motorcycles = () => {
                             type="text"
                             value={searchTerm}
                             onChange={(e) => {
-                                setSearchTerm(e.target.value) 
+                                setSearchTerm(e.target.value)
                                 setListS(true)
                             }}
                             placeholder="Buscar marca..."
@@ -260,7 +282,7 @@ const Motorcycles = () => {
                                 }`}
                         />
 
-                        {searchTerm && listS  && (
+                        {searchTerm && listS && (
                             <ul style={{ listStyle: "none" }} className="absolute bg-white border rounded w-full mt-1 max-h-40 overflow-y-auto shadow-lg z-10">
                                 {
                                     brandsFiltered.length > 0 ?
@@ -329,7 +351,7 @@ const Motorcycles = () => {
 
 
 
-            {/* Tabla */}
+            {/* Visualización de motocicletas registradas */}
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-white rounded-xl shadow text-left">
                     <thead>
