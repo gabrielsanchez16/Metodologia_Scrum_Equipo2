@@ -1,13 +1,28 @@
+// React
 import { useEffect, useState } from "react";
+
+// Formularios
 import { useForm } from "react-hook-form";
+
+// Iconos
 import { UserCog, Trash2, Pencil, Phone, MessageCircle } from "lucide-react";
+import { IdentificationIcon } from "@heroicons/react/24/outline";
+
+// API
 import { createClients, deleteClient, editClient, getAllClients } from "../../Utils/apiClients";
 
+// Hooks personalizados
 import { useAuth } from "../../hooks/useAuth";
-import { IdentificationIcon } from "@heroicons/react/24/outline";
+
+// Tipos/Interfaces
 import type { Client } from "../../Interface/Clients";
+
+// Librerías externas
 import toast from "react-hot-toast";
+
+// Componentes locales
 import Loading from "../../Components/Loading/Loading";
+
 
 
 const Clients = () => {
@@ -153,7 +168,7 @@ const Clients = () => {
                 />
             </div>
 
-            {/* Formulario */}
+            {/* FORMULARIO — Registrar (crear/actualizar) clientes */}
             <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="bg-white rounded-xl shadow p-5 mb-8 flex flex-wrap gap-4 justify-between"
@@ -234,7 +249,7 @@ const Clients = () => {
                 <p className="text-red-600 mb-4 text-sm">{errors.name.message}</p>
             )}
 
-            {/* Tabla */}
+            {/* VISUALIZACIÓN — Tabla de clientes */}
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-white rounded-xl shadow text-left">
                     <thead>
