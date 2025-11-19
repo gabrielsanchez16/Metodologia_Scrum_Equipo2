@@ -1,15 +1,27 @@
+// React y hooks
 import { useEffect, useState } from "react";
-import { LockClosedIcon, EnvelopeIcon, UserIcon, PhoneIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 import { useForm as useReactHookForm } from "react-hook-form";
-import { register as RegisterApi } from '../../Utils/api';
-import type { RegisterForm } from "../../Interface/auth";
 import { Link, useNavigate } from "react-router";
-import Loading from "../../Components/Loading/Loading";
 import { Title } from "react-head";
+
+// Iconos
+import { LockClosedIcon, EnvelopeIcon, UserIcon, PhoneIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 import { EyeIcon, HouseIcon, LucideMapPinHouse } from "lucide-react";
+
+// Componentes
+import Loading from "../../Components/Loading/Loading";
+
+// Tipos
+import type { RegisterForm } from "../../Interface/auth";
 import type { TypeWorkshop } from "../../Interface/TypeWorkshop";
+
+// Utils / API
+import { register as RegisterApi } from '../../Utils/api';
 import { getAllTypesWorkshop } from "../../Utils/apiTypeWorkshop";
+
+// Otros
 import toast from "react-hot-toast";
+
 
 
 
