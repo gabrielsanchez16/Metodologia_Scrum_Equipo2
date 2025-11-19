@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import type { WorkOrder } from "../../Interface/WorkOrder";
 import { useLocation, useNavigate } from "react-router";
 import { getById } from "../../Utils/apiMotorcycles";
-import { useEffect,  useState } from "react";
+import { useEffect, useState } from "react";
 import type { Motorcycle } from '../../Interface/Motorcycles';
 import { getAllMechanics } from "../../Utils/api";
 import { useAuth } from "../../hooks/useAuth";
@@ -72,16 +72,16 @@ const WorkOrderCreate = () => {
         //     selectRef.current.size = 1; // vuelve al estado normal
         // }
 
-         
+
 
     }, [totalGeneral, searchTerm, setValue, discount]);
 
-useEffect(() => {
-  setFilteredServices(services?.filter((service: Service) =>
-                    service.name.toLowerCase().includes(searchTerm.toLowerCase())
+    useEffect(() => {
+        setFilteredServices(services?.filter((service: Service) =>
+            service.name.toLowerCase().includes(searchTerm.toLowerCase())
         ));
 
-}, [searchTerm,services])
+    }, [searchTerm, services])
 
 
 
@@ -250,6 +250,13 @@ useEffect(() => {
             <p className="text-gray-600 mb-6">
                 Crea una orden del vehiculo escogido, anexale servicios, mecanico, recomendaciones... tambien podras adjuntarle fotos del proceso
             </p>
+
+            {/* 
+                Formulario para crear una nueva orden de trabajo.
+                Incluye: datos básicos, selección de cliente/mecánico, 
+                servicios asociados, imágenes y observaciones.
+            */}
+
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-white p-6 rounded-xl shadow-md">
                 {/* Título */}
                 <div>
