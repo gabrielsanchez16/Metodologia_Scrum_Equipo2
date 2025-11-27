@@ -24,6 +24,7 @@ const ResetPassword = lazy(() => import("./Views/ResetPassword/ResetPassword"));
 const Quotes = lazy(() => import("./Views/Quotes/Quotes"));
 const Workshops = lazy(() => import("./Views/Workshops/Workshops"));
 const Parts = lazy(() => import("./Views/Parts/Parts"));
+const GuideWorkshop = lazy(() => import("./Views/Guide/GuideWorkshop"));
 
 const App = () => {
   return (
@@ -64,6 +65,7 @@ const App = () => {
               <Route path="/Order" element={<WorkOrderEdit />} />
               <Route path="/Profile" element={<Profile />} />
               <Route path="/Quotes" element={<Quotes />} />
+              <Route path="/GuideWorkshops" element={<GuideWorkshop />} />
             </Route>
           </Route>
 

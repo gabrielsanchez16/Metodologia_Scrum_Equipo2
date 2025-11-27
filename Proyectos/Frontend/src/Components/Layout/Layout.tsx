@@ -10,6 +10,7 @@ import {
     LogOut,
     User,
     Quote,
+    Book,
 } from "lucide-react";
 import { useAuth } from "../../hooks/useAuth";
 
@@ -27,6 +28,7 @@ export default function Layout() {
         { to: "/Mechanics", label: "Mecánicos",key: "Mecanicos", icon: <Wrench size={18} /> },
         { to: "/Profile", label: "Perfil",key: "", icon: <User size={18} /> },
         { to: "/Quotes", label: "Cotizaciones",key: "Cotizaciones", icon: <Quote size={18} /> },
+        { to: "/GuideWorkshops", label: "Guía para Talleres",key: "Guía Talleres", icon: <Book size={18} /> },
     ];
     let modules: string[] = [];
 
